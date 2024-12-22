@@ -48,3 +48,34 @@ body, ul, li, a {
 .menu a:hover::after {
     width: 100%;
 }
+/* Booking Button Styling */
+.booking-button {
+    position: relative;
+    align-items: center;
+}
+
+.booking-button a {
+    font-size: 16px;
+    color: black;
+    margin-right: 15px; /* Space between the phone number and the button */
+    position: relative;
+    z-index: 1; /* Ensure the phone number stays above the button */
+}
+
+.booking-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    z-index: 0; /* Ensure the button is below the phone number */
+}
+
+/* Animation on Hover */
+.booking-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.1); /* zoom effect */
+    box-shadow: 0 4px 10px black;
+}
