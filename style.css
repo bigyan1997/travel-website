@@ -48,6 +48,7 @@ body, ul, li, a {
 .menu a:hover::after {
     width: 100%;
 }
+
 /* Booking Button Styling */
 .booking-button {
     position: relative;
@@ -78,4 +79,38 @@ body, ul, li, a {
     background-color: #0056b3;
     transform: scale(1.1); /* zoom effect */
     box-shadow: 0 4px 10px black;
+}
+/* Search Section */
+#search{
+    background-color:  #ffe6cc;
+}
+#search h2{
+    text-align: center;
+    padding-top: 30px;
+    color: #ffa64d;
+}
+
+.search-form form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+form input, form select, form button {
+    padding: 10px;
+    font-size: 14px;
+    width: 130px;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 768px) {
+    form {
+        flex-direction: column; /* Stack form elements on smaller screens */
+        align-items: flex-start;
+    }
+
+    form input, form select, form button {
+        width: 100%;
+    }
 }
