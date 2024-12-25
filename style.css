@@ -7,6 +7,8 @@ body, ul, li, a {
     text-decoration: none;
     color: inherit;
     font-family: 'Open Sans', sans-serif;
+    background-color: #b2e4f8;
+    
 }
 
 /* Header Styling */
@@ -49,68 +51,104 @@ body, ul, li, a {
     width: 100%;
 }
 
-/* Booking Button Styling */
-.booking-button {
-    position: relative;
-    align-items: center;
-}
-
 .booking-button a {
-    font-size: 16px;
-    color: black;
-    margin-right: 15px; /* Space between the phone number and the button */
-    position: relative;
-    z-index: 1; /* Ensure the phone number stays above the button */
+    margin-right: 15px;
 }
 
-.booking-btn {
-    background-color: #007BFF;
-    color: white;
+/* Booking Section */
+
+.booking-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.header-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/background-header.jpg'); 
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+}
+
+.form-container h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-container p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.form-group {
+    flex: 1 1 calc(50% - 10px);
+}
+
+.form-group label {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.form-group input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 25%;
+    font-size: 14px;
+}
+
+.book-btn {
+    margin-top: 10px;
     padding: 10px 20px;
+    border: none;
+    background: linear-gradient(90deg, #4CAF50, #2A9DF4);
+    color: white;
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    z-index: 0; /* Ensure the button is below the phone number */
+    flex: 1 1 100%;
 }
 
-/* Animation on Hover */
-.booking-btn:hover {
-    background-color: #0056b3;
-    transform: scale(1.1); /* zoom effect */
-    box-shadow: 0 4px 10px black;
-}
-/* Search Section */
-#search{
-    background-color:  #ffe6cc;
-}
-#search h2{
-    text-align: center;
-    padding-top: 30px;
-    color: #ffa64d;
+.book-btn:hover {
+    opacity: 0.9;
 }
 
-.search-form form {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
+/* Mobile view - Hidden Checkbox and Hamburger */
+.menu-toggle {
+    display: none; 
 }
 
-form input, form select, form button {
-    padding: 10px;
-    font-size: 14px;
-    width: 130px;
-    margin-bottom: 10px;
-}
-
-
-@media (max-width: 768px) {
-    form {
-        flex-direction: column; /* Stack form elements on smaller screens */
-        align-items: flex-start;
-    }
-
-    form input, form select, form button {
-        width: 100%;
-    }
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
 }

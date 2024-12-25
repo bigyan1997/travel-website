@@ -18,6 +18,11 @@
             <div class="logo">
                 <img src="images/logo.webp" href="index.html">
             </div>
+
+             <!-- Hidden Checkbox for Menu Toggle -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+
             <div class="menu">
                 <ul class="nav-items">
                     <li><a href="index.html">Home</a></li>
@@ -33,63 +38,45 @@
                     <i class="fa-solid fa-phone"></i>
                     </span> 0430556905 <span class="phone"></span>
                 </a>
-                <button type="submit" class="booking-btn">Book Now <span><i class="fa-solid fa-plus"></i></span></button>
+                <button type="submit" class="book-btn">Book Now</button>
             </div>
         </div>
     </header>
-    <section id="search">
-        <h2>Travelling And Aooking Made So Much Easy </h2>
-        <div class="search-form">
+
+    <div class="booking-section">
+        <div class="header-image"></div>
+        <div class="form-container">
+            <h1>Book Now Your Ticket</h1>
+            <p>And start exploring the world today! Whether it's a tropical getaway, a city escape, or a nature retreat, your next journey awaits. Don't wait - secure your spot and make unforgettable memories!</p>
             <form>
-                <label for="checkin">Check-in</label>
-                <input type="date" id="checkin" name="checkin">
-              
-                <label for="checkout">Check-out</label>
-                <input type="date" id="checkout" name="checkout">
-              
-                
-                <select id="guests" name="guests">
-                  <option value="">Guest</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="4">5</option>
-                  <option value="4">6</option>
-                  <option value="4">7</option>
-                  <option value="4">8</option>
-                  <option value="more">For more than 8 guest contact the hotel agent</option>
-                </select>
-              
-                <input type="number" id="bedroom" name="bedroom" min="1" max="10" placeholder="Bedroom">
-              
-                <select id="location" name="location">
-                    <option value="all-location">All Locations</option>
-                    <option value="nsw">New South Wales</option>
-                    <option value="victoria">Victoria</option>
-                    <option value="queensland">Queensland</option>
-                    <option value="south-australia">South Australia</option>
-                    <option value="western-australia">Western Australia</option>
-                    <option value="tasmania">Tasmania</option>
-                  </select>
-    
-                <select id="properties" name="properties">
-                  <option value="all-property">All Properties</option>
-                  <option value="villa">Villa</option>
-                  <option value="apartment">Apartment</option>
-                  <option value="house">House</option>
-                  <option value="studio">Studio</option>
-                  <option value="cabin">Cabin</option>
-                  <option value="condo">Condo</option>
-                  <option value="penthouse">Penthouse</option>
-                  <option value="penthouse">Penthouse</option>
-                </select>
-              
-                <button type="submit" class="booking-btn">Search</button>
-                <button type="reset"><i class="fa fa-refresh" aria-hidden="true"></i></button>
-            </form>              
+                <div class="form-group">
+                    <label for="where">Where</label>
+                    <input type="text" id="where" placeholder="1234 Main St">
+                </div>
+                <div class="form-group">
+                    <label for="to">To</label>
+                    <input type="text" id="to" placeholder="1234 Main St">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date">
+                </div>
+                <div class="form-group">
+                    <label for="price">Price</label>
+                    <input type="text" id="price" placeholder="Enter price">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number">
+                </div>
+                <button type="submit" class="book-btn">Book Now</button>
+            </form>
         </div>
-    </section>
+    </div>
     
 
 </body>
