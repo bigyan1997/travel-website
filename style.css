@@ -20,8 +20,21 @@ body, ul, li, a {
     padding: 10px 20px;
 }
 
+.logo {
+    display: flex; 
+    align-items: center; 
+    gap: 10px; /* Adds space between the image and the text */
+}
+
 .logo img {
-    height: 60px; 
+    height: 60px; /* Adjust the size of the logo image */
+    width: auto; /* Maintain aspect ratio */
+}
+
+.logo span {
+    font-size: 1.2rem; /* Adjust text size as needed */
+    font-weight: bold; /* Make the text bold */
+    color: #333; /* Set a color for the text */
 }
 
 .menu ul {
@@ -52,8 +65,13 @@ body, ul, li, a {
     width: 100%;
 }
 
-.booking-button a {
-    margin-right: 15px;
+.booking-button{
+    display: flex; 
+    align-items: center; 
+    gap: 10px;
+}
+.booking-button .book-btn{
+    margin-top: 4px;
 }
 
 /* Booking Section */
@@ -154,7 +172,7 @@ form {
     font-size: 30px;
 }
 
-/* Packages Section Styling */
+/* Packages Heading Styling */
 #packages {
     text-align: center;
 }
@@ -208,4 +226,43 @@ form {
     font-size: 1.2rem;
     margin: 0;
     color: #070707;
+}
+
+/* About Us */
+#about-us {
+    text-align: center;
+    padding: 40px; 
+}
+
+#about-us h1 {
+    font-size: 2rem;
+    margin: 0 auto 30px; /* Centers the heading and adds margin below */
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block; 
+    border-bottom: 5px solid black; 
+    padding-bottom: 5px; /* Space between text and border */
+}
+
+.about-us-container {
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+    justify-content: center;
+    gap: 20px; /* Space between the image and text */
+    margin-top: 20px;
+    flex-wrap: wrap; /* Stacks items vertically on smaller screens */
+    text-align: left; /* Ensures text in the paragraph aligns left */
+}
+
+.about-image {
+    flex: 1 1 40%; /* Image takes up 40% width */
+    max-width: 300px; 
+    height: auto;
+    box-shadow: 0 4px 6px rgba(14, 13, 13, 0.1); /* Optional: Adds shadow */
+}
+
+.about-us-container p {
+    flex: 1 1 55%; /* Paragraph takes up 55% width */
+    line-height: 1.6;
+    font-size: 1rem;
 }
