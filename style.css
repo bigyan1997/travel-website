@@ -318,11 +318,16 @@ form {
     object-fit: cover;
     background-color: whitesmoke;
 }
-.social-link {
-    color: inherit;  
+/* .social-list-items {
+    color: blue;  
     display: inline-block; 
     background-color: transparent;
 }
+
+.social-items {
+    background-color: transparent;
+} */
+
 
 /* Arrow Button Styling */
 .slider-controls {
@@ -541,9 +546,12 @@ form {
     gap: 15px;
     background-color: transparent;
 }
-
+.social-items{
+    background-color: transparent;
+}
 .social-list li a {
-    color: #89c7f7;
+    color: #033b63;
+    opacity: .7;
     font-size: 1.5rem;
     transition: color 0.3s ease;
     background-color: transparent;    
@@ -551,6 +559,8 @@ form {
 
 .social-list li a:hover {
     color: #fff;
+    background-color: transparent;    
+
 }
 
 .footer-bottom {
