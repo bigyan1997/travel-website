@@ -230,6 +230,23 @@ form {
     margin: 0;
     color: #070707;
 }
+.view-all-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+    background: linear-gradient(90deg, #4CAF50, #2A9DF4);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    margin-bottom: 45px;
+}
+.view-all-btn:hover {
+    opacity: 0.9;
+    background: linear-gradient(90deg, #2A9DF4, #4CAF50);
+}
 
 /* About Us */
 #about-us {
@@ -253,15 +270,15 @@ form {
     justify-content: center;
     gap: 20px; /* Space between the image and text */
     margin-top: 20px;
-    flex-wrap: wrap; /* Stacks items vertically on smaller screens */
-    text-align: left; /* Ensures text in the paragraph aligns left */
+    flex-wrap: wrap; 
+    text-align: left; 
 }
 
 .about-image {
     flex: 1 1 40%; /* Image takes up 40% width */
     max-width: 300px; 
     height: auto;
-    box-shadow: 0 4px 6px rgba(14, 13, 13, 0.1); /* Optional: Adds shadow */
+    box-shadow: 0 4px 6px rgba(14, 13, 13, 0.1); 
 }
 
 .about-us-container p {
@@ -318,15 +335,6 @@ form {
     object-fit: cover;
     background-color: whitesmoke;
 }
-/* .social-list-items {
-    color: blue;  
-    display: inline-block; 
-    background-color: transparent;
-}
-
-.social-items {
-    background-color: transparent;
-} */
 
 
 /* Arrow Button Styling */
