@@ -147,13 +147,11 @@ form {
 
 .book-btn {
     display: inline-block;
-
     margin-top: 1rem;
     padding: 0.5rem 2rem;
     background: linear-gradient(90deg, #4CAF50, #2A9DF4);
     color: #fff;
     border-radius: 5px;
-    /* flex: 1 1 100%; */
     cursor: pointer;
 }
 
@@ -265,4 +263,99 @@ form {
     flex: 1 1 55%; /* Paragraph takes up 55% width */
     line-height: 1.6;
     font-size: 1rem;
+}
+
+/* Testimonials */
+#testimonials {
+    text-align: center;
+    padding: 40px;
+}
+
+#testimonials h1 {
+    font-size: 2rem;
+    margin: 0 auto 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block; 
+    border-bottom: 5px solid black; 
+    padding-bottom: 5px;
+}
+
+.testimonials-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin: 2rem;
+}
+
+.profile-card {
+    background: linear-gradient(90deg,  #89c7f7, #e2e1e1);
+    border: 1px solid #444;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+    display: flex;
+}
+
+.profile-card:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+.profile-image {
+    width: 125px;
+    height: 150px;
+    border-radius: 0 30%;
+    box-shadow: 0 4px 6px rgba(99, 98, 98, 0.1);
+    object-fit: cover;
+    background-color: whitesmoke;
+}
+
+.social-list {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding: 0;
+    background-color: transparent;
+}
+
+.social-items {
+    background-color: transparent;
+}
+.social-link {
+    color: inherit;  
+    display: inline-block; 
+    background-color: transparent;
+}
+
+/* Arrow Button Styling */
+.slider-controls {
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.arrow-left, .arrow-right {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.arrow-left:hover, .arrow-right:hover {
+    color: #89c7f7
+}
+
+.arrow-left {
+    margin-right: 20px;
+}
+
+.arrow-right {
+    margin-left: 20px;
 }
