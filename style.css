@@ -24,18 +24,31 @@ body, ul, li, a {
     display: flex; 
     align-items: center; 
     gap: 10px; /* Adds space between the image and the text */
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 .logo img {
-    height: 60px; /* Adjust the size of the logo image */
-    width: auto; /* Maintain aspect ratio */
+    height: 60px; 
+    width: auto; 
 }
 
 .logo span {
-    font-size: 1.2rem; /* Adjust text size as needed */
-    font-weight: bold; /* Make the text bold */
-    color: #333; /* Set a color for the text */
+    font-size: 1.2rem; 
+    font-weight: bold; 
+    color: #333; 
 }
+
 
 .menu ul {
     display: flex;
@@ -143,6 +156,19 @@ form {
     border: 1px solid #ddd;
     border-radius: 25%;
     font-size: 14px;
+}
+
+input:focus {
+    animation: pulse 0.5s infinite alternate;
+}
+
+@keyframes pulse {
+    from {
+        box-shadow: 0 0 5px rgba(0, 128, 255, 0.5);
+    }
+    to {
+        box-shadow: 0 0 15px rgba(0, 128, 255, 0.9);
+    }
 }
 
 .book-btn {
@@ -321,8 +347,19 @@ form {
     overflow: hidden;
     transition: transform 0.3s;
     display: flex;
+    animation: slideIn 1s ease-in-out;
 }
 
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 .profile-card:hover {
     transform: translateY(-10px) scale(1.05);
 }
@@ -358,8 +395,6 @@ form {
 .arrow-right {
     margin-left: 20px;
 }
-
-/* Contact Us */
 
 /* Contact Us */
 #contact {
